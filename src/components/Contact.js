@@ -10,8 +10,11 @@ function Contact() {
         <div className="Contact">
             <img className="avatar" src={avatar} alt="" />
             <div>
-            <h4 className="name">{name}</h4>
-            <span className="status status-online">{online ? "Online" : "Offline"}</span><p className="status-text"></p>
+                <h4 className="name">{name}</h4>
+                <div className="status">
+                    <div className="status-online"></div>
+                    <p className="status-text">{online ? "Online" : "Offline"}</p>
+                </div>
             </div>
 
         </div>
